@@ -11,16 +11,16 @@ export default function Navi() {
                         <Icon name="user times" size="large" />
             HRMS Project
           </Menu.Item>
-                    <Menu.Item name="Home" />
-                    <Menu.Item name="Job Advert" />
-                    <Menu.Item name="Companies" />
-                    <Menu.Item name="CV's" />
-                    <Menu.Menu position="right">
+          <Menu.Item name="Ana Sayfa" />
+          <Menu.Item name="İş ilanları" />
+          <Menu.Item name="İş arayanlar" />
+          <Menu.Item name="İş verenler" />
+          <Menu.Menu position="right">
                         <Menu.Item>
                             <Button.Group>
-                                <Button color='blue'>Sign Up</Button>
+                                <Button color='blue' attached="left">Sign Up</Button>
                                 <Button.Or />
-                                <Button positive>Sign In</Button>
+                                <Button positive attached="left" >Sign In</Button>
                             </Button.Group>
                             <Button circular color='linkedin' icon='linkedin' />
                             <Button circular color='google plus' icon='google plus' />

@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export default class JobPositionService{
+export default class positionService{
     getJobPositions(){
         return axios.get("http://localhost:8080/api/job-positions/getall")
     }
