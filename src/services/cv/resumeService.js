@@ -1,12 +1,12 @@
 import axios from "axios";
 
-export default class CvService {
-    getCvs() {
+export default class ResumeService {
+    getAll() {
         return axios.get("http://localhost:8080/api/cv/getall");
     }
 
-    getByCandidateId(id) {
-        return axios.get("http://localhost:8080/api/cv/getByCandidateId?candidateId=" + id)
+    getAllByCandidateId(id) {
+        return axios.get("http://localhost:8080/api/cv/getAllByCandidateId?candidate=" + id)
 
 
     }

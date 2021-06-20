@@ -1,6 +1,8 @@
+import { result } from 'lodash';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import ResumeService from '../../services/cv/resumeService'
+import ResumeService from '../../services/cv/resumeService';
+import { Card, Icon } from 'semantic-ui-react'
 
 
 export default function ResumeDetail() {
@@ -10,13 +12,14 @@ export default function ResumeDetail() {
     const [resumes, setResumes] = useState([])
 
     useEffect(() => {
-        let resumeService = new ResumeService()
-        resumeService.getResumeCandidateId(id).then(result => setResumes(result.data.data))
-    }, [])
-
-
+      let resumeService = new ResumeService()
+      resumeService.getAll.then(result => setResumes(result.data.data))
+    })
+    
     return (
-      <div></div>
+      <div>
+ qqq
+      </div>
     )
 
 
